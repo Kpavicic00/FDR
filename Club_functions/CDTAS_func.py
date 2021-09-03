@@ -402,6 +402,7 @@ def DCTAS_MAIN(DFrame):
 
     # temporary variables that note the value the ticker chooses
     flag = 0
+    remm = 0
     flagTemp = '0'
     task = st.selectbox("Chose a option of proces ",["State !","Competition !"],key='key_options')
 
