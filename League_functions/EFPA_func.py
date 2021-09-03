@@ -168,6 +168,7 @@ def EFPA_MAIN(DFrame):
     # with colums:
     flag = 0
     flag_option = '0'
+    remm = 0
     flagTemp = '0'
     task = st.selectbox("Task task meni",["LEAUGE statistic","Year_of_Season statistic","Nationality statistic"],key='key_options')
 

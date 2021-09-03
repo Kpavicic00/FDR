@@ -384,6 +384,7 @@ def DCWS_MAIN(DFrame):
     # temporary variables that note the value the ticker chooses
     flag = 0
     flagTemp = '0'
+    rem = 0
 
     task = st.selectbox("Chose a option of proces data by YEAR",["YEAR !"],key='key_options')
 

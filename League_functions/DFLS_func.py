@@ -379,6 +379,7 @@ def DFLS_MAIN(DFrame):
     # temporary variables that note the value the ticker chooses
     flag = 0
     flagTemp = '0'
+    remm = 0
     task = st.selectbox("Task task meni",["LEAUGE statistic","NUMBER of Sesons statistic"],key='key_options')
 
     if task == "LEAUGE statistic":
