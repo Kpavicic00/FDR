@@ -19,7 +19,6 @@ from html_temp import*
 import marshal
 def app():
     st.write("post")
-    create_IMAGE_FINAL()
     create_post_table_temp_MAIN()
     
     conn = sqlite3.connect('data_new.db', check_same_thread=False)
@@ -43,7 +42,7 @@ def app():
                     blog_option = st.selectbox("Chose a option ",["Add article","Add Image"], key='dsa' )
                     if blog_option == "Add article":
                         blog_articles = st.text_area("Post Articles here",height=250,key='dasdsa')
-                        if blog_articles == '':
+                        if blog_articles is not None:
                             if st.button("Add"):
                                 conn = sqlite3.connect('data_new.db', check_same_thread=False)
                                 # df_post_id = pd.read_sql_query('SELECT id_post FROM blog_table_temp_MAIN',conn)
@@ -75,8 +74,6 @@ def app():
                                 c = conn.cursor()
                                 st.success("Articles added")
                                 caching.clear_cache()
-                            else:
-                                st.warning("Article is emtpy !!")
                     elif blog_option == "Add Image":
                         image_file = st.file_uploader("Upload a image ",type=['png','jpeg','jpg'],key='dsadsa1')
                         if image_file is not None:
@@ -229,7 +226,7 @@ def app():
                         blog_option = st.selectbox("Chose a option ",["Add article","Add Image"], key='dsa' )
                         if blog_option == "Add article":
                             blog_articles = st.text_area("Post Articles here",height=250,key='dasdsa')
-                            if blog_articles == '':
+                            if blog_articles is not None:
                                 if st.button("Add"):
                                     conn = sqlite3.connect('data_new.db', check_same_thread=False)
                                     df_post_id = pd.read_sql_query('SELECT id_post FROM blog_table_temp_MAIN',conn)
@@ -262,8 +259,7 @@ def app():
                                     c = conn.cursor()
                                     st.success("Articles added")
                                     caching.clear_cache()
-                                else:
-                                    st.warning("Article is emtpy !!")
+
                         elif blog_option == "Add Image":
                             image_file = st.file_uploader("Upload a image ",type=['png','jpeg','jpg'],key='dsadsa1')
                             if image_file is not None:
