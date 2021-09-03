@@ -86,10 +86,7 @@ from io import StringIO
 from io import BytesIO
 from PIL import Image
 from database import*
-# from keras.preprocessing.image import array_to_img
-# from keras.preprocessing.image import load_img
-# from keras.preprocessing.image import img_to_array
-# from keras.preprocessing.image import array_to_img
+
 
 
 
