@@ -9,7 +9,7 @@ from functions import check_email,make_password,check_hashes,GETCoefficients,rem
 from database import create_usertable,add_user_data,check_double_email,check_double_username,login_user,check_userdatatable
 import matplotlib
 matplotlib.use('Agg')
-from League_functions.avg_Income_for_player_Departures import  BATCH_for_GetAVGExpendFORplayerArrivals
+#from League_functions.avg_Income_for_player_Departures import  BATCH_for_GetAVGExpendFORplayerArrivals
 from functions import DataFrameFunc,NumberOfRows
 from League_functions.EFPA_func import*
 from Club_functions.CDWS_func import*

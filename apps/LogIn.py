@@ -10,7 +10,7 @@ import datetime
 import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('Agg')
-from League_functions.avg_Income_for_player_Departures import  BATCH_for_GetAVGExpendFORplayerArrivals
+#from League_functions.avg_Income_for_player_Departures import  BATCH_for_GetAVGExpendFORplayerArrivals
 from functions import DataFrameFunc,NumberOfRows
 from League_functions.EFPA_func import*
 from League_functions.IFPD_func import*
